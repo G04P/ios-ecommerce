@@ -123,9 +123,7 @@ export const ItemDetail = ({
                 </label>
               ))}
           </div>
-          <div className="text-lg mx-5 font-semibold text-black-500 ">
-            ${price}
-          </div>
+          <div className="text-lg mx-5 font-semibold text-white ">${price}</div>
 
           <div>
             <h3 className="sr-only ">Description</h3>

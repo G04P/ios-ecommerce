@@ -30,14 +30,6 @@ export const NavBar = ({}) => {
           <li>
             <Dropdown className="text-gray-400 hover:text-white" />
           </li>
-          <li>
-            <Link
-              to={"/Contacto/Contacto"}
-              className="text-gray-400 hover:text-white"
-            >
-              Contacto
-            </Link>
-          </li>
         </ul>
 
         <div className="flex mx-3 p-2">
