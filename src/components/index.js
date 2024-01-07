@@ -1,7 +1,8 @@
+export * from "./Animated/Animated";
 export * from "./Button/Button";
 export * from "./Cart/Cart";
 export * from "./Contacto/Contacto";
-export * from "./Item/Item";
+export { default as Item } from "./Item/Item";
 export * from "./ItemDetail/ItemDetail";
 export * from "./ItemDetailContainer/ItemDetailContainer";
 export * from "./ItemList/ItemList";

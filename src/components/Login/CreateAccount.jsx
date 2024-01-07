@@ -20,10 +20,10 @@ export const CreateAccount = () => {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
-        <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+        <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-200 antialiased">
           Sign Up
         </h4>
-        <p className="mt-1 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+        <p className="mt-1 block font-sans text-base font-normal leading-relaxed text-gray-200 antialiased">
           Enter your details to register.
         </p>
         <form
@@ -91,7 +91,7 @@ export const CreateAccount = () => {
               className="mt-px cursor-pointer select-none font-light text-gray-700"
               htmlFor="checkbox"
             >
-              <p className="flex items-center font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              <p className="flex items-center font-sans text-sm font-normal leading-normal text-gray-200 antialiased">
                 I agree the
                 <a
                   className="font-semibold transition-colors hover:text-pink-500"
@@ -109,7 +109,7 @@ export const CreateAccount = () => {
           >
             Register
           </button>
-          <p className="mt-4 block text-center font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+          <p className="mt-4 block text-center font-sans text-base font-normal leading-relaxed text-gray-200 antialiased">
             Already have an account?
             <Link
               className="font-semibold mx-2 text-pink-500 transition-colors hover:text-blue-700"

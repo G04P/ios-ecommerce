@@ -7,7 +7,7 @@ import { CartContextProvider } from "./Context/CartContext";
 
 import { Cart } from "./components/Cart/Cart";
 import { Contacto } from "./components/Contacto/Contacto";
-import { CreateAccount, SignIn } from "./components";
+import { Animated, CreateAccount, SignIn } from "./components";
 
 export const App = () => {
   return (
@@ -15,7 +15,10 @@ export const App = () => {
       <BrowserRouter>
         <CartContextProvider>
           <NavBar />
-          <main className="main">
+          <header>
+            <Animated />
+          </header>
+          <main className="bg-black min-h-screen">
             <Routes>
               <Route path="/" element={<ItemListContainer />} />
               <Route path="/Item/:id" element={<ItemDetailContainer />} />

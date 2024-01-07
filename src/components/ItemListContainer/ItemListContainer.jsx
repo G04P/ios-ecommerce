@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { AppContext } from "../../Context/appContext";
-
+import { FaCircleNotch } from "react-icons/fa";
 import { ItemList } from "../ItemList/ItemList";
 import { seedProductsDb } from "../../ProductsMock";
 
@@ -20,7 +20,9 @@ export const ItemListContainer = ({ greeting }) => {
       <div>{greeting}</div>
       {isLoading ? (
         <div>
-          <h4 className="justify-center">Cargando Productos...</h4>
+          <h1 className="flex h-screen  text-xl justify-center motion-reduce:hidden text-white ">
+            Cargando Productos...
+          </h1>
         </div>
       ) : (
         <div>

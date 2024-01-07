@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "../Button/Button";
+import styles from "../ItemDetail/ItemDetail.module.css";
 import { CartContext } from "../../Context/CartContext";
 import { useCount } from "../../Hooks/useCount";
 
@@ -21,23 +21,19 @@ export const ItemDetail = ({
   };
 
   return (
-    <div className="flex min-h-full	 items-center justify-center ">
-      <div className="flex font-sans border-4 rounded border mt-8 m-5 border-opacity-50 ">
+    <div className="flex 	 items-center justify-center ">
+      <div className="flex font-sans   mt-10 m-5  ">
         <div className="mx-5 mt-6 flex-none relative">
           <div className=" m-6 hidden overflow-hidden rounded-lg lg:block">
-            <img
-              src={img}
-              alt=""
-              className="w-full h-225 object-contain object-center"
-            />
+            <img src={img} alt="" className={styles.image} />
           </div>
         </div>
 
         <div className="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16"></div>
 
-        <form className="flex-auto p-6">
+        <form className="flex-auto p-6 mt-8">
           <div className="flex flex-wrap">
-            <h1 className="flex-auto mx-5 text-xl font-semibold text-gray-900">
+            <h1 className="flex-auto mx-5 text-xl font-semibold text-gray-200">
               {name}
             </h1>
 
@@ -57,7 +53,7 @@ export const ItemDetail = ({
                   type="radio"
                   value="PRO"
                 />
-                <div className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                <div className="w-9 h-9 bg-gray-200 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
                   PRO
                 </div>
               </label>
@@ -68,7 +64,7 @@ export const ItemDetail = ({
                   type="radio"
                   value="s"
                 />
-                <div className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                <div className="w-9 h-9 bg-gray-200 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
                   1TB
                 </div>
               </label>
@@ -79,7 +75,7 @@ export const ItemDetail = ({
                   type="radio"
                   value="128GB"
                 />
-                <div className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                <div className="w-9 h-9 bg-gray-200 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
                   128GB
                 </div>
               </label>
@@ -90,7 +86,7 @@ export const ItemDetail = ({
                   type="radio"
                   value="l"
                 />
-                <div className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                <div className="w-9 h-9 bg-gray-200 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
                   64GB
                 </div>
               </label>
@@ -101,7 +97,7 @@ export const ItemDetail = ({
                   type="radio"
                   value="xl"
                 />
-                <div className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                <div className="w-9 h-9 bg-gray-200 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
                   520GB
                 </div>
               </label>
@@ -135,7 +131,7 @@ export const ItemDetail = ({
             <h3 className="sr-only ">Description</h3>
 
             <div className="space-y-6 m-5">
-              <p className="text-base text-gray-900">
+              <p className="text-base text-gray-200">
                 {description}
                 <br />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -149,7 +145,7 @@ export const ItemDetail = ({
             <div className="flex-auto flex space-x-4">
               <Link to={"/Item/Cart"}>
                 <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold ml-2 mt-4 py-2 px-4 rounded-full"
                   onClick={() =>
                     addProductCart({ img, name, price, id, colors }, count)
                   }
