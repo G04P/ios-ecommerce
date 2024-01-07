@@ -31,7 +31,6 @@ Este proyecto es una replicación de la famosa tienda en línea de Apple, con un
 4. Sube los cambios a tu repositorio: `git push origin feature/nueva-caracteristica`
 5. Abre un pull request para que revisemos tus cambios.
 
-## Licencia
 
-Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
 
